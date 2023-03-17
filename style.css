@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: var(--white);
+  font-weight: bold;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #303843;
+  --orange: #ffdac9;
+  --blue: #6a9ce9;
+  --red: #fb8e93;
+}
+
+h1 {
+  word-spacing: 0.5rem;
+}
+
+div {
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--orange);
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  min-width: 450px;
+  width: 80vw;
+  height: 80%;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  background-color: var(--blue);
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 0.5rem;
+}
+
+.button-container,
+.results-container,
+.score-container {
+  display: flex;
+  width: 85%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.choice-buttons {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  background-color: var(--black);
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.choice-buttons:hover {
+  background-color: var(--red);
+}
+
+.result-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+  border-radius: 0.5rem;
+  height: 10rem;
+  width: 20rem;
+  font-size: 2rem;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.score-container > div {
+  color: var(--black);
+}
+
+.image {
+  width: 12%;
+  height: auto;
+}
