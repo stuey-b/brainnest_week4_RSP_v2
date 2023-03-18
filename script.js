@@ -53,8 +53,8 @@ const displayRoundResults = () => {
   playerChoiceDisplay.textContent = playerSelection;
   computerChoiceDisplay.textContent = computerSelection;
   const interval = setInterval(() => {
-    playerChoiceDisplay.textContent = `???`;
-    computerChoiceDisplay.textContent = `???`;
+    playerChoiceDisplay.textContent = `You: ???`;
+    computerChoiceDisplay.textContent = `Comp: ???`;
     resultsDisplay.textContent = ``;
     clearInterval(interval);
   }, 2000);
