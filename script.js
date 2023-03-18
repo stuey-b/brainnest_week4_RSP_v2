@@ -55,7 +55,7 @@ const displayRoundResults = () => {
   const interval = setInterval(() => {
     playerChoiceDisplay.textContent = `???`;
     computerChoiceDisplay.textContent = `???`;
-    resultsDisplay.textContent = `Round ${currentRound}`;
+    resultsDisplay.textContent = ``;
     clearInterval(interval);
   }, 2000);
 };
