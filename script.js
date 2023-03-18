@@ -10,7 +10,6 @@ let playerScore = 0;
 let computerScore = 0;
 let playerSelection = ``;
 let computerSelection = ``;
-let currentRound = 1;
 
 const computerPlay = () => {
   switch (Math.floor(Math.random() * 3)) {
@@ -79,9 +78,8 @@ const declareWinner = () => {
 const gameReset = () => {
   computerScore = 0;
   playerScore = 0;
-  currentRound = 1;
   heading.textContent = `ROCK! SCISSORS! PAPER!`;
-  resultsDisplay.textContent = `Round 1`;
+  resultsDisplay.textContent = `Reset! Let's Play`;
   playerScoreDisplay.textContent = `Player score: ${playerScore}`;
   computerScoreDisplay.textContent = `Computer score: ${computerScore}`;
 };
@@ -94,7 +92,6 @@ const game = () => {
       computerPlay();
       compareChoices();
       displayRoundResults();
-      currentRound++;
       declareWinner();
     });
   });
