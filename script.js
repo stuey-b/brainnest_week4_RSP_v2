@@ -73,12 +73,6 @@ const declareWinner = () => {
       gameReset();
       clearInterval(interval);
     }, 5000);
-  } else if (computerScore === 5 && playerScore === 5) {
-    heading.textContent = `It's a DRAW.`;
-    const interval = setInterval(() => {
-      gameReset();
-      clearInterval(interval);
-    }, 5000);
   }
 };
 
